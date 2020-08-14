@@ -5,7 +5,7 @@ import './effects.css'
 
 const FormWithCustomHook = () => {
 
-const [formValue, setformValue, handleInputChange] = useForm({
+const [formValue, handleInputChange] = useForm({
     name: '',
     email: '',
     password: ''
