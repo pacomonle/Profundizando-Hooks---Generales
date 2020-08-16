@@ -64,7 +64,7 @@ console.log(id)
     return (
         <div>
             <h1>Hook useReducer</h1>
-            <h3>Todo APP</h3><small>Total todos: {todos && todos.length}</small>
+            <h3>Todo APP</h3><small>Total todos: {todos ? todos.length : 0}</small>
             <hr />
             <div class="row">
                 <div className='col-7'>

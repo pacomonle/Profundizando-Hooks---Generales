@@ -47,7 +47,7 @@ console.log('llamada', isComponentMountedref.current)
             { 
                 data: null,
                 loading: false,
-                error: error
+                error: 'no se pudo cargar la info'
             }
         )
     }

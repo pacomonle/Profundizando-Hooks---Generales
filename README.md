@@ -4,6 +4,25 @@ npm install react-router-dom
 # instalacion de Bootstrap con el CDN
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+################### PRUEBAS ######################
+
+### INSTALAR
+# npm install react@^16.9.0
+# npm install --save-dev react-test-renderer@^16.9.0
+# npm install --save-dev @testing-library/react-hooks
+
+# npm i enzyme
+# npm i --save-dev enzyme enzyme-adapter-react-16
+#  npm install --save-dev enzyme-to-json
+``` archivo setup.Tests.js
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import {createSerializer} from 'enzyme-to-json';
+
+Enzyme.configure({ adapter: new Adapter() });
+expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

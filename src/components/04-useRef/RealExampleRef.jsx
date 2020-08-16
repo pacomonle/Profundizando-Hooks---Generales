@@ -19,7 +19,7 @@ const [show, setshow] = useState(false)
             }
             <button 
                type="button" 
-               onClick = {() => setshow(!show)}
+               onClick = {() => {setshow(!show)}}
                className='btn btn-outline-danger btn-block my-5'>
                {!show ? 'Mostrar' : 'Ocultar'}
             </button>
